@@ -79,9 +79,10 @@
 
 
 		public function up(){
-			
+			debug($this->data);
 			$id      = $this->data['Movie']['id'];
-			$cp      = $this->data['Movie']['copy'];
+			//$cp      = $this->data['Movie']['copy'];
+			$cp = 1; 
 			$nmMovie = $this->data['Movie']['name'];
 			$Movie = $this->Movie->find('first', array(
 				'conditions' => array(
